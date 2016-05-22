@@ -7,4 +7,5 @@ deploy:
       database: billing_{branch}
       mysqluser: billing_{branch}
     dir: '{home}/github/{branch}'
-    init: '{home}/scripts/init.sh'
+    scripts:
+      init: '{home}/scripts/init.sh'
