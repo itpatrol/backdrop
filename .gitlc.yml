@@ -1,0 +1,10 @@
+deploy:
+  billing:
+    server: 192.99.57.50
+    username: billing
+    env_vars:
+      domain: billingcloud.cc
+      database: billing_{branch}
+      mysqluser: billing_{branch}
+    dir: '{home}/github/{branch}'
+    init: '{home}/scripts/init.sh'
