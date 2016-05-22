@@ -6,6 +6,8 @@ deploy:
       domain: billingcloud.cc
       database: billing_{branch}
       mysqluser: billing_{branch}
+      account_mail: gor@me.com
+      account_name: admin
     dir: '{home}/github/{branch}'
     scripts:
       init: '{home}/scripts/init.sh'
